@@ -217,7 +217,7 @@ def threaded_client(conn, _id):
 				break
 
 			data = data.decode("utf-8")
-			#print("[DATA] Recieved", data, "from client id:", current_id)
+			print("[DATA] Recieved", data, "from client id:", current_id)
 
 			# look for specific commands from recieved data
 			if data.split(" ")[0] == "move":
